@@ -5,6 +5,8 @@ use App\Http\Controllers\ItemController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ItemController01;
 use App\Http\Controllers\CustomerController01;
+use App\Http\Controllers\ItemOwner;
+use App\Http\Controllers\CustomerOwner;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,5 +47,12 @@ Route::get('delete1/{id}',[CustomerController01::class,'delete']);
 
 Route::get('edit1/{id}',[CustomerController01::class,'edit1']);
 Route::post('edit1',[CustomerController01::class,'update1']);
+
+Route::view('openitem','openitem');
+Route::get('openitem',[ItemOwner::class,'list']);
+
+Route::view('opencustomer','opencustomer');
+Route::get('opencustomer',[CustomerOwner::class,'list']);
+
 
 require __DIR__.'/auth.php';

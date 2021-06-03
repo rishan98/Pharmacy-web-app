@@ -1,7 +1,7 @@
  <html>
  <style>
     body {
-        background-color: #f5f5f5;
+        background-color: LightGray;
     }
     .t1 {
         
@@ -17,7 +17,10 @@
         font-family: Helvetica, sans-serif;
     }
     .table td {
-        border: 1px solid black;
+        border: 1px solid #ddd;
+    }
+    .table tr:nth-child(even){
+        background-color: #f2f2f2;
     }
     .btn1 {
         width: 10%;

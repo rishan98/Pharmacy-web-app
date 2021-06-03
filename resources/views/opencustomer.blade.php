@@ -42,15 +42,14 @@
  <body>
             <div class="t1">
 
-                <h2 class="header">Update and Delete Customers</h2><br>
+                <h2 class="header">All Customers</h2><br>
                     <table class="table">
                        <tr style="font-weight: bold;">
                           <td>Id</td>
                           <td>Name</td>
                           <td>Telephone No.</td>
                           <td>Item ID</td>
-                          <td> </td>
-                          <td> </td>
+                          
                        </tr>
                        @foreach ($customers as $customer)
                        <tr>
@@ -59,20 +58,15 @@
                           <td>{{$customer['telno']}}</td>
                           <td>{{$customer['iid']}}</td>
                         
-                          <td style="background-color: red; "><a href={{"delete1/" .$customer['id']}}>Delete</a></td>
-                          <td style="background-color: green;"><a href={{"edit1/" .$customer['id']}}>Edit</a></td>
+                          
                        </tr>
                        @endforeach
                     </table>
                     <br><br><br>
-                    <div>
-                       <form action="/dashboard">
-                         <input class="btn1" type="submit" value="Go to dashboard">
-                       </form>
-                    </div>
+                    
             </div>
 
             
                     
  </body>
- </html>      
+ </html>     

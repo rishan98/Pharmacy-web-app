@@ -19,6 +19,18 @@
         font-weight: bold;
         font-size: 25px;
        }
+       input.btn2 {
+        width: 20%;
+        height: 10%;
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        background-color: brown;
+        font-size: 20px;
+        float: right;
+        
+       }
+
 
     </style>
 
@@ -48,6 +60,15 @@
 
                     </form>
 
+                    <form action="/openitem">
+                       <input class="btn2" type="submit" value="All Items">
+                    </form>
+                    <br><br>
+
+                    <form action="/opencustomer">
+                       <input class="btn2" type="submit" value="All Customers">
+                    </form>
+
                 </div><br><br><br>
                 <div>
                 <div class="p-6 bg-white border-b border-gray-200">
@@ -74,6 +95,7 @@
                       </div>
 
                     </form>
+                    
                     
                 </div>
                 
